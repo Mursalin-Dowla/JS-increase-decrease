@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row w-75 m-auto pt-5">
+        <div class="col-12 text-center mt-5 pt-5 bg-dark pb-5 rounded-pill">
+          <h1 class="text-primary display-4" id="show">
+            0
+          </h1>
+        
+          <button class="btn btn-danger mt-3" onclick="decrease();">
+            Decrease
+          </button>
+          <button class="btn btn-info mt-3" onclick="reset();">
+            Reset
+          </button>
+          <button class="btn btn-success mt-3" onclick="increase(0);">
+            Increase
+          </button>
+          <br>
+          <br>
+          <input type="range" value="0" name="" id="range" max="200" min="0" onchange ="getRange();">
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
